@@ -1,0 +1,6 @@
+#!/bin/bash
+#tester  valid_c_file ip_file test_file
+t1="s/((int )?main\(.*\)(\n)?\{)/\1FILE* f1=fopen(\"$2\",\"r\");/"  
+echo "$t1"
+grep  "main()" $1 
+tr 'main()\n' 'main() '<$1 | sed -re  "s/main[(][)][{]/main(){FILE* f1=fopen(\"$1\",\"r\");/" | tee temp 

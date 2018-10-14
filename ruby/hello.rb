@@ -1,0 +1,2 @@
+d=gets()
+puts d

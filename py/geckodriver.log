@@ -1,0 +1,30 @@
+1518620897934	geckodriver	INFO	geckodriver 0.19.1
+1518620897957	geckodriver	INFO	Listening on 127.0.0.1:36693
+1518620898837	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.LO5GbQbzeDlC"
+1518620915823	Marionette	INFO	Enabled via --marionette
+1518620936919	Marionette	INFO	Listening on port 41715
+1518620938527	Marionette	WARN	TLS certificate errors will be ignored for this session
+1518621067279	geckodriver	INFO	geckodriver 0.19.1
+1518621067354	geckodriver	INFO	Listening on 127.0.0.1:51249
+1518621069288	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.vuqPgHwmCrQk"
+1518621086589	Marionette	INFO	Enabled via --marionette
+1518621109128	Marionette	INFO	Listening on port 40493
+1518621116432	Marionette	WARN	TLS certificate errors will be ignored for this session
+1518621187522	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
+1518621187741	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1518622425605	geckodriver	INFO	geckodriver 0.19.1
+1518622425649	geckodriver	INFO	Listening on 127.0.0.1:53453
+1518622426726	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ynBnjjl6u5a4"
+1518622435056	Marionette	INFO	Enabled via --marionette
+1518622446452	Marionette	INFO	Listening on port 46213
+1518622446558	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1518622498107	geckodriver	INFO	geckodriver 0.19.1
+1518622498129	geckodriver	INFO	Listening on 127.0.0.1:54291
+1518622499903	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.DYUtxbLDN2Oh"
+1518622504005	Marionette	INFO	Enabled via --marionette
+1518622512698	Marionette	INFO	Listening on port 39545
+1518622513424	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-829605894, line 67: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-829605894, line 67: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-829605894, line 67: unreachable code after return statement

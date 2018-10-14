@@ -1,0 +1,9 @@
+{% if questions_list %}
+		<table>
+			{% for q in questions_list %}
+				<tr><td><a href="{% url 'polls:detail' q.id %}">{{ q }}</a></td><td>{{ q.pub_date }}</td></tr>
+			{% endfor %}
+		</table>
+{% else %}
+	<p>No polls are available</p>
+{% endif %}

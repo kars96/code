@@ -1,0 +1,21 @@
+#all the files are required for program to run
+
+#To install openGL
+
+sudo apt-get install freeglut3-dev
+
+#There are 2 versions of the game: one use freeimage APIs & also unstable in some systems (monopoly.cpp) and the other doesn't (monopoly-no-bg.cpp)
+
+#To compile and run monopoly-no-bg.cpp
+
+g++ monopoly-no-bg.cpp -lGL -lGLU -lglut -lm -o monopoly-no-bg
+./monopoly-no-bg
+
+#To compile and run monopoly.cpp
+#First install freeimage
+
+sudo apt-get install libfreeimage-dev
+
+g++ monopoly.cpp -lGL -lGLU -lglut -lm -lfreeimage -o monopoly
+./monopoly-no-bg
+

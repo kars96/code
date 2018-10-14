@@ -1,0 +1,69 @@
+Resource id #7Judgements Today
+            window.prerenderReady = false;
+            window.sessionTimeout = "Session Timeout"
+            
+            window.oneSignalAppId = "1a1bd4de-6d4e-4bb6-ae1e-faf2f3b06558";
+            window.oneSignalDomainName = "https://judgementtoday.os.tc";
+            
+            // Start of Zendesk Chat Script-->
+            window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+            d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+            _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+            $.src="https://v2.zopim.com/?4eJ3X2x3ktaeGZTr1nRDdgt3fdnG6PYl";z.t=+new Date;$.
+            type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+            //End of Zendesk Chat Script-->
+        
+        
+            
+            
+                
+        
+        
+
+// transfers sessionStorage from one tab to another
+var sessionStorageTransfer = function(event) {
+    if(!event) { event = window.event; } // ie suq
+    if(!event.newValue) return;          // do nothing if no value to work with
+    if (event.key == 'getSessionStorage') {
+        // another tab asked for the sessionStorage -> send it
+        localStorage.setItem('sessionStorage', (!sessionStorage.length ?
+                    "" : sessionStorage.getItem("last_request_timestamp")));
+        // the other tab should now have it, so we're done with it.
+        localStorage.removeItem('sessionStorage'); // <- could do short timeout as well.
+    } else if (event.key == 'sessionStorage' && (!sessionStorage.length || 
+            (sessionStorage.length && (sessionStorage.getItem("last_request_timestamp") < event.newValue)))) {
+        sessionStorage.setItem("last_request_timestamp", event.newValue);
+    }
+};
+
+// listen for changes to localStorage
+if(window.addEventListener) {
+    window.addEventListener("storage", sessionStorageTransfer, false);
+} else {
+    window.attachEvent("onstorage", sessionStorageTransfer);
+};
+    
+// Ask other tabs for session storage (this is ONLY to trigger event)
+if (!sessionStorage.getItem("last_request_timestamp")) {
+    localStorage.setItem('getSessionStorage', 'foobar');
+    localStorage.removeItem('getSessionStorage', 'foobar');
+};
+
+        window.public_pages = new Array();
+        var index = 0;
+                    window.public_pages[index] = {"key" : "about-us","value" : "About Us"};
+            index++;
+                    window.public_pages[index] = {"key" : "search-tips","value" : "Search Tips"};
+            index++;
+                    window.public_pages[index] = {"key" : "terms-and-conditions","value" : "Terms and Conditions"};
+            index++;
+                    window.public_pages[index] = {"key" : "bare-acts","value" : "Bare Acts"};
+            index++;
+                
+        window.citationType = [];
+                    window.citationType.push("JT");
+                    window.citationType.push("AIR Cross Citation");
+                    window.citationType.push("SCC Cross Citation");
+                    window.citationType.push("SCR Cross Citation");
+                    window.citationType.push("NGT Citation");
+                <br/>

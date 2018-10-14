@@ -1,0 +1,3 @@
+10cs25 2010 Data structures
+10cs45 2010 Algorithms
+10cs49 2010 operating system
